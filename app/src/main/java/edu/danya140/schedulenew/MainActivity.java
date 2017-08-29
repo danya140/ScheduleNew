@@ -79,21 +79,25 @@ public class MainActivity extends AppCompatActivity {
                     .method(Connection.Method.POST)
                     .execute();
 
+            //check for correct
             Jsoup.connect("https://cabs.itut.ru/cabinet/lib/autentification.php")
                     .cookies(cookies)
                     .userAgent("Mozilla")
                     .method(Connection.Method.POST)
                     .execute();
 
+            Jsoup.connect("https://cabs.itut.ru/cabinet/?login=yes")
+                    .cookies(cookies)
+                    .userAgent("Mozilla")
+                    .method(Connection.Method.POST)
+                    .get();
 
-
-
-
-            txtStr = Jsoup.connect("https://cabs.itut.ru/cabinet/?login=yes")
+            txtStr = Jsoup.connect("https://cabs.itut.ru/cabinet/project/cabinet/forms/raspisanie.php?week=1")
                     .cookies(cookies)
                     .userAgent("Mozilla")
                     .method(Connection.Method.POST)
                     .get().toString();
+
 
 
 
