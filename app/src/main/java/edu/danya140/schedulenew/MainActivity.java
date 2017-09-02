@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected static Document doc;
     protected TextView txt;
     Parser parser = new Parser();
-    GetShedule gts;
+    GetSchedule gts;
     String txtStr;
 
     @Override
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         txt = (TextView) findViewById(R.id.textView);
-        gts = new GetShedule();
+        gts = new GetSchedule();
         gts.execute();
     }
 
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Internet thread
-    class GetShedule extends AsyncTask<Document,Document,Document> {
+    class GetSchedule extends AsyncTask<Document,Document,Document> {
 
         @Override
         protected Document doInBackground(Document... params) {
@@ -102,13 +102,11 @@ public class MainActivity extends AppCompatActivity {
                     .get();
 
             //get schedule html
-            return Jsoup.connect("https://cabs.itut.ru/cabinet/project/cabinet/forms/raspisanie.php?week=1")
+            return Jsoup.connect("https://cabs.itut.ru/cabinet/project/cabinet/forms/raspisanie.php?week=18")
                     .cookies(cookies)
                     .userAgent("Mozilla")
                     .method(Connection.Method.POST)
                     .get();
-
-
         }
 
         @Override
@@ -120,6 +118,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     protected void makeLayout(){
+
+
 
     }
 }

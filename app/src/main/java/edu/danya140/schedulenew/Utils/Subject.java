@@ -19,6 +19,25 @@ public class Subject {
         teacher = teach;
     }
 
+    public void setClassroom(String classroom) {
+        this.classroom = classroom;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setTeacher(String teacher) {
+        this.teacher = teacher;
+    }
 
     private void normalize(){
 
