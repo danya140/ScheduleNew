@@ -24,13 +24,15 @@ public class Parser {
         return subjects;
     }
 
-    public String[] parseDays(){
+    public String[] parseDays(Document doc){
+        docum = doc;
         Element el = docum.select("table").get(1);
         String[] str = el.getElementsByTag("b").text().split(" ");
         return str;
     }
 
-    private int parseWeek(){
+    public int parseWeek(Document doc){
+        docum = doc;
         String string;
         string = str.substring(str.indexOf("№"),str.indexOf("<strong"));
         string = string.substring(1,string.length()-1);

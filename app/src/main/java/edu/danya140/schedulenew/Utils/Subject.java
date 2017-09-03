@@ -39,6 +39,26 @@ public class Subject {
         this.teacher = teacher;
     }
 
+    public String getClassroom() {
+        return classroom;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getTeacher() {
+        return teacher;
+    }
+
     private void normalize(){
 
     }

@@ -22,6 +22,10 @@
         <activity
             android:name=".ScheduleActivity"
             android:label="@string/title_activity_schedule"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Schedule2"
+            android:label="@string/title_activity_schedule2"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

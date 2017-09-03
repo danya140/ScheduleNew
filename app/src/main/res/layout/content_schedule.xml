@@ -11,8 +11,4 @@
     tools:showIn="@layout/activity_schedule">
 
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"></LinearLayout>
 </RelativeLayout>

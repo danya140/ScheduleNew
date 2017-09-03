@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/update"
+        android:orderInCategory="100"
+        android:title="@string/menu_update"
+        android:onClick="onUpdateClick"/>
+    <item
+        android:id="@+id/next_week"
+        android:orderInCategory="100"
+        android:title="@string/menu_next_week"
+        android:onClick="onNextWeek"/>
+    <item
+        android:id="@+id/abbrev"
+        android:orderInCategory="100"
+        android:title="@string/menu_abbrev"
+        android:onClick="onAbbrev"/>
+
+</menu>

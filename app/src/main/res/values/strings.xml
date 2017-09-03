@@ -1,5 +1,18 @@
 <resources>
-    <string name="app_name">ScheduleNew</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_schedule">ScheduleActivity</string>
+    <string name="app_name">Расписание</string>
+    <!--Res for auth activity-->
+    <string name="welcom_auth_msg">Введите логин и пароль от личного кабинета</string>
+    <string name="login_text">Логин</string>
+    <string name="pass_text">Пароль</string>
+    <string name="auth_button_text">Войти</string>
+    <string name="del_button_text">Delete</string>
+    <!--Res for main activity -->
+    <string name="test_text">Test</string>
+    <!--Res for menu -->
+    <string name="menu_update">Обновить</string>
+    <string name="menu_next_week">Следующая неделя</string>
+    <string name="menu_abbrev">Сокращать</string>
+    <string name="title_activity_schedule2">Schedule2</string>
 </resources>
