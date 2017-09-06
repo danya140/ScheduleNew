@@ -24,6 +24,16 @@ public class Parser {
         return subjects;
     }
 
+    public Subject[][] parse(String s){
+        docum = Jsoup.parse(s);
+        str = docum.toString();
+        str = str.substring(str.indexOf("<table"),str.lastIndexOf("<script"));
+        //parseWeek();
+        //parseDays();
+        parseSubjects();
+        return subjects;
+    }
+
     public String[] parseDays(Document doc){
         docum = doc;
         Element el = docum.select("table").get(1);

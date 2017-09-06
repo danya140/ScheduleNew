@@ -62,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
                 if(Integer.parseInt(str)==1){
-                    //saveAuthInf(mLoginString,mPassString);
+                    saveAuthInf(mLoginString,mPassString);
                     Intent mainmenu = new Intent(LoginActivity.this,MainActivity.class);
                     startActivity(mainmenu);
                 } else {
@@ -109,14 +109,14 @@ public class LoginActivity extends AppCompatActivity {
             Map<String,String> cookies = getMidenCookies();
 
             //push login
-            Jsoup.connect("https://cabs.itut.ru/cabinet/lib/updatesession.php?key=users&value=daniilhacker@mail.ru")//+login)
+            Jsoup.connect("https://cabs.itut.ru/cabinet/lib/updatesession.php?key=users&value="+login)
                     .cookies(cookies)
                     .userAgent("Mozilla")
                     .method(Connection.Method.POST)
                     .execute();
 
             //push password
-            Jsoup.connect("https://cabs.itut.ru/cabinet/lib/updatesession.php?key=parole&value=199617")//+pass)
+            Jsoup.connect("https://cabs.itut.ru/cabinet/lib/updatesession.php?key=parole&value="+pass)
                     .cookies(cookies)
                     .userAgent("Mozilla")
                     .method(Connection.Method.POST)

@@ -17,13 +17,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent schedule = new Intent(this,ScheduleActivity.class);
-        startActivity(schedule);
-
-        /*
         try{
             BufferedReader reader = new BufferedReader(new InputStreamReader(
-                    openFileInput("")));
+                    openFileInput("auth.inf")));
 
             Intent schedule = new Intent(this,ScheduleActivity.class);
             startActivity(schedule);
@@ -31,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (FileNotFoundException ex){
             Intent login = new Intent(this,LoginActivity.class);
             startActivity(login);
-        } */
+        }
 
 
 
